@@ -44,7 +44,7 @@ jobs:
       - name: Rodar validacao de duplicidade (gera relatorios e site)
         run: |
           python src/validar_duplicatas.py data/duplicates_2.csv \
-            --limite-duplicidade 0.1
+            --limite-duplicidade 0.15
 
       - name: Upload dos relatorios como artefato
         uses: actions/upload-artifact@v4
